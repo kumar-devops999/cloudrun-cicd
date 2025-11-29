@@ -2,7 +2,7 @@ pipeline {
     agent any 
 
     environment {
-        PROJECT_ID = 'ageless-courier-466816-q3'  // GCP Project ID
+        PROJECT_ID = 'resolute-bloom-476105-f9'  // GCP Project ID
         DOCKER_HUB_CREDENTIALS_USR = 'afroz2022'  // Your Docker Hub username
         IMAGE_NAME = 'cloudrunlab'  // Docker image name
     }
@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/praveen-goud999/cloudrun-cicd.git'
+                git branch: 'main', url: 'https://github.com/kumar-devops999/cloudrun-cicd.git'
             }
         }
 
